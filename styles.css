@@ -1,49 +1,5 @@
 @import url(node_modules/modern-normalize/modern-normalize.css);
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-
-.sidebar {
-    background-color: #1992d4;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-}
-
-.content {
-    display: grid;
-}
-
-.header-top {
-    display: flex;
-}
-
-.header-bot {
-    display: flex;
-}
-
-.header-bot ul {
-    display: flex;
-    list-style-type: none;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #e2e8f0;
-}
-
-.card {
-    height: 150px;
-    
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
-}
-
-.trending {
-    grid-column: 2 / 3;
+* {
+    font-family: "Roboto", system-ui, sans-serif;
 }
