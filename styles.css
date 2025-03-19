@@ -1,46 +1,75 @@
 @import url(node_modules/modern-normalize/modern-normalize.css);
 
 * {
-    font-family: "Roboto", system-ui, sans-serif;
+  font-family: "Roboto", system-ui, sans-serif;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
 }
 
 .header {
-    grid-column: 2 / 5;
-    grid-row: 1 / 2;
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+}
+
+.header2nd {
+  display: flex;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: space-between;
+}
+
+.header button {
+  background-color: #1992d4;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: bold;
+  margin: 8px;
 }
 
 .sidebar {
-    grid-row: 1 / 3;
-    background-color: #1992d4;
+  grid-row: 1 / 3;
+  background-color: #1992d4;
+  color: white;
 }
 
 .article {
-    grid-column: 2 / 4;
-    background-color: #e2e8f0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    
+  grid-column: 2 / 4;
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .card {
-    background-color: white;
-    width: 90%;
-    margin: 16px;
-    padding: 24px;
+  background-color: white;
+  width: 90%;
+  margin: 16px;
+  padding: 24px;
+  border-radius: 10px;
+  border-left: 10px solid orange;
+  overflow: hidden;
+  box-shadow: 0px 5px 8px #888;
+}
+
+.card .title {
+  font-weight: bold;
 }
 
 .nav {
-    grid-column: 4 / 5;
-    background-color: #e2e8f0;
+  grid-column: 4 / 5;
+  background-color: #e2e8f0;
 }
 
-.announcements, 
+.announcements,
 .trending {
-    background-color: white;
+  background-color: white;
 }
-
