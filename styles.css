@@ -21,14 +21,21 @@
   display: flex;
   align-items: center;
   margin-top: 12px;
+  justify-content: space-between;
 }
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
 
 .header-top svg {
   fill: #888;
   height: 30px;
   margin: 0;
-  margin-right: 4px;
-}
+  margin-right: 12px;
+} 
 
 #search-bar {
   height: 1.5rem;
@@ -46,6 +53,22 @@
 
 .header-bottom em {
   font-size: 28px;
+}
+
+.header-bottom img {
+  margin-bottom: 12px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.lizard {
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-right: 12px;
 }
 
 .header ul {
@@ -168,4 +191,8 @@ svg {
   padding: 24px;
   border-radius: 10px;
   width: min(300px, 1fr);
+}
+
+.announcements .underline {
+  border-bottom: 0.5px solid rgb(136, 136, 136, 0.3);
 }
